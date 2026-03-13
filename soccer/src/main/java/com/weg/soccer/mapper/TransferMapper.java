@@ -3,7 +3,9 @@ package com.weg.soccer.mapper;
 import com.weg.soccer.dto.transfer.TransferRequestDto;
 import com.weg.soccer.dto.transfer.TransferResponseDto;
 import com.weg.soccer.model.Transfer;
+import org.springframework.stereotype.Component;
 
+@Component
 public class TransferMapper {
 
     public Transfer toEntity(TransferRequestDto dto) {

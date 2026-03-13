@@ -3,7 +3,9 @@ package com.weg.soccer.mapper;
 import com.weg.soccer.dto.stadium.StadiumRequestDto;
 import com.weg.soccer.dto.stadium.StadiumResponseDto;
 import com.weg.soccer.model.Stadium;
+import org.springframework.stereotype.Component;
 
+@Component
 public class StadiumMapper {
 
     public Stadium toEntity(StadiumRequestDto dto) {

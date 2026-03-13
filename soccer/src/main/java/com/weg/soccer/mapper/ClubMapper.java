@@ -3,9 +3,9 @@
     import com.weg.soccer.dto.club.ClubRequestDto;
     import com.weg.soccer.dto.club.ClubResponseDto;
     import com.weg.soccer.model.Club;
+    import org.springframework.stereotype.Component;
 
-    import java.time.LocalDate;
-
+    @Component
     public class ClubMapper {
 
         public Club toEntity(

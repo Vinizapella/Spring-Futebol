@@ -3,7 +3,9 @@ package com.weg.soccer.mapper;
 import com.weg.soccer.dto.match.MatchRequestDto;
 import com.weg.soccer.dto.match.MatchResponseDto;
 import com.weg.soccer.model.Match;
+import org.springframework.stereotype.Component;
 
+@Component
 public class MatchMapper {
 
     public Match toEntity(MatchRequestDto dto) {
