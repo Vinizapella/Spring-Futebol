@@ -9,7 +9,7 @@ import lombok.Setter;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "match")
+@Table(name = "football_match")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
