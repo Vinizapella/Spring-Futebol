@@ -12,7 +12,11 @@ public class StadiumMapper {
         return new Stadium(
                 null,
                 dto.name(),
-                dto.capacity()
+                dto.capacity(),
+                dto.city(),
+                dto.state(),
+                dto.turfType(),
+                dto.inaugurationDate()
         );
     }
 
@@ -20,7 +24,11 @@ public class StadiumMapper {
         return new StadiumResponseDto(
                 stadium.getId(),
                 stadium.getName(),
-                stadium.getCapacity()
+                stadium.getCapacity(),
+                stadium.getCity(),
+                stadium.getState(),
+                stadium.getTurfType(),
+                stadium.getInaugurationDate()
         );
     }
 }

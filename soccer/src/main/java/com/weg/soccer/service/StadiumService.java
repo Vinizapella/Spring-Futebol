@@ -52,10 +52,14 @@ public class StadiumService {
             Integer id
     ){
         Stadium stadium = stadiumRepository.findById(id)
-                .orElseThrow(()->new RuntimeException("Staium not found"));
+                .orElseThrow(()->new RuntimeException("Stadium not found"));
 
         stadium.setName(stadiumRequestDto.name());
         stadium.setCapacity(stadiumRequestDto.capacity());
+        stadium.setCity(stadiumRequestDto.city());
+        stadium.setState(stadiumRequestDto.state());
+        stadium.setTurfType(stadiumRequestDto.turfType());
+        stadium.setInaugurationDate(stadiumRequestDto.inaugurationDate());
 
         Stadium stadiumUpdate = stadiumRepository.save(stadium);
         return stadiumMapper.toResponse(stadiumUpdate);
